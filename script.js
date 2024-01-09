@@ -7,9 +7,7 @@ function carregar(){
 
     //Hora do sistema    
     var data = new Date()
-    //var hora = data.getHours()
-
-    var hora = 21   
+    var hora = data.getHours()
 
     //Mostrando a hora
     subt.innerHTML = (`Agora são ${hora} horas!`)
@@ -18,8 +16,7 @@ function carregar(){
     if (hora >=0 && hora < 12) {
         mudacor.style.backgroundColor = "#FED388"
         subt.style.color = "black"
-        imag.src = 'imagemmanha.png'
-        subt = "Bom dia!"
+        imag.src = 'imagemmanha.png'    
 
 
     } else if (hora >= 12 && hora < 18) {
